@@ -1,5 +1,5 @@
 ---
   language: "java"
   jdk: openjdk8
-  builder: "maven"
+  build-automation: maven
   mavenVersion: "3.1"
