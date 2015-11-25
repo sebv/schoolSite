@@ -24,8 +24,12 @@ public final class Browsers {
     }
 
     public static String get() {
+        System.out.println("AKAK0");
         browser = System.getenv("browser");
-        return browsersList.get(browser == null ? Utils.getProperty("api.browser") : browser).toLowerCase();
+        System.out.println("AKAK1 " + browser);
+        String ret = browsersList.get(browser == null ? Utils.getProperty("api.browser") : browser).toLowerCase();
+        System.out.println("AKAK2 " + ret);
+        return ret;
     }
 
     public static String get(String environment) {
