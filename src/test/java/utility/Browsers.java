@@ -27,6 +27,7 @@ public final class Browsers {
         System.out.println("AKAK0");
         browser = System.getenv("browser");
         System.out.println("AKAK1 " + browser);
+        throw new Exception("AKAK stop here!")
         String ret = browsersList.get(browser == null ? Utils.getProperty("api.browser") : browser).toLowerCase();
         System.out.println("AKAK2 " + ret);
         return ret;
